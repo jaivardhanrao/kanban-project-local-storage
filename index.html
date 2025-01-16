@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanaban Board</title>
+    <script src="https://kit.fontawesome.com/589957875e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+       <!-- Toolbox (Navbar) -->
+    <div class="toolbox-cont">
+        <div class="toolbox-priority-cont">
+            <div class="lightpink colorFilter" data-color="lightpink"></div>
+            <div class="lightgreen colorFilter" data-color="lightgreen"></div>
+            <div class="lightblue colorFilter" data-color="lightblue"></div>
+            <div class="black colorFilter" data-color="black"></div>
+        </div>
+        
+        <div><i title="Clear All Filters" class="fa-regular fa-circle-xmark clearFilter"></i></div>
+
+        <div class="darkMode">
+            <i title="Change to Light Mode" class="fa-solid fa-toggle-on toggles" name="DarkMode"></i>
+            <i title="Change to Dark Mode" class="fa-solid fa-toggle-off toggles" name="LightMode"></i>
+        </div>
+
+        <div class="action-btn-cont">
+            <div class="add-btn changeOnModeDiv">
+                <i  class="fa-solid fa-plus add changeOnMode"></i>
+            </div>
+
+           <div class="remove-btn changeOnModeDiv">
+            <i class="fa-solid fa-xmark del changeOnMode"></i>
+           </div>
+        </div>
+    </div>
+
+    <!-- Task Ticket -->
+
+    <div class="main-cont">
+         <!-- <div class="ticket-cont">
+             <div class="ticket-color"></div>
+             <div class="ticket-id">#1</div>
+             <div class="task-area" contenteditable="false">Wake UP</div>
+              <div class="ticket-lock">
+                <i class="fa-solid fa-lock lock changeOnMode"></i>
+                <i class="fa-solid fa-unlock unlock changeOnMode"></i>
+              </div>
+         </div> -->
+        
+
+         
+    </div>
+
+    <!-- Modal Task Area -->
+    <div class="modal-cont">
+
+        <textarea class="textArea-cont placeholderLight" placeholder="Enter Your Task"></textarea>
+
+        <div class="priority-colors-container">
+            <p>Press <b>Escape</b> to Cancel</p>
+            <br>
+            <p>Press <b>Enter</b> to Add Task</p>
+            <div class="lightpink priority-color addTask" data-color="lightpink"></div>
+            <div class="lightgreen priority-color addTask" data-color="lightgreen"></div>
+            <div class="lightblue priority-color addTask" data-color="lightblue"></div>
+            <div class="black priority-color active addTask" data-color="black"></div>
+        </div>
+
+    </div>
+
+
+    <script src="https://unpkg.com/shortid-dist@1.0.5/dist/shortid-2.2.13.min.js"></script>
+   <script src="./script.js"></script>
+
+
+
+</body>
+</html>
